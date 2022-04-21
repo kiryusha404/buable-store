@@ -1,0 +1,296 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*header*/
+
+header{
+    background: #FF7F56;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 70px;
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    text-align: center;
+    
+}
+.logo{
+    width: 280px;
+    height: 70px;
+    float: left;
+ }
+
+header button{
+    border: 0;
+    outline: none;
+    height: 42px;
+    margin: 15px 150px 0 15px;
+    width: 105px;
+}
+.button_l{
+    border-radius: 0 25px;
+}
+.button_c{
+    border-radius: 25px;
+}
+.button_r{
+    border-radius: 25px 0;
+}
+
+/*footer*/
+
+footer{
+    background: #FF7F56;
+    width: 100%;
+    height: 170px;
+    bottom:0;
+    padding-top: 5px;
+}
+
+.footer__article1 h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+    font-size: 24px;
+}
+.footer__article1 p{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+    font-size: 18px;
+}
+
+.footer__article2{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 20px;
+    color:white;
+    font-size: 18px;
+}
+.footer__article2 h2{
+    font-size: 24px;
+}
+.footer__article2 img{
+    margin: 20px;
+    width: 20px;
+    height: 20px;
+}
+/*section__index*/
+.section__index{
+    width: 100%;
+    height: 100%;
+}
+/*слайдер*/
+.emae{
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding-top:150px; 
+    margin-left: 25%;
+}
+.emae img {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 50px 0 50px 0;;
+}
+.emae button{
+	margin-left:10px;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	cursor:pointer;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+/*кнопки слайдера*/
+.a1{
+background-color:#274D7E;
+}
+.b1{
+background-color: white;
+border: 1px solid black;
+}
+.c1{
+background-color: white;
+border: 1px solid black;
+}
+
+.d1{
+background-color: white;
+border: 1px solid black;
+}
+/*новости*/
+.novosti{
+width: 150px;
+height: 40px;
+background-color: #FF7F56;
+margin-left: 200px;
+border-radius: 30px;
+text-align: center;
+}
+.novosti p{
+    font-size: 20px;
+    color: white;
+    padding: 9px;
+}
+
+.stroka{
+    width: 50%;
+    display: flex;
+    margin-left: 15%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.novost{
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin-right: 50px;
+}
+.novost img{
+    width: 300px;
+    height: 200px;
+}
+.novost p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*section__korzina*/
+.section__korzina{
+    width: 100%;
+    height: 700px;
+}
+
+/*aside*/
+
+.left_navigation{
+    height: 400px;
+    width: 200px;
+    margin: 30px 70px 0 30px; 
+    background-color: #ff7f56;
+    border-radius: 50px; 
+    text-align: center;
+    padding: 10px;
+    float: left;
+    position: absolute;
+    position: fixed;
+}
+
+/*section__katalog*/
+
+.section__katalog{
+    margin-top: 70px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+.name_p{
+    width: 140px;
+    height: 42px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 0 25px;
+
+}
+
+.b_panel{
+    height: 32px;
+    width: 120px;
+    border-radius: 20px;
+    border: 0;
+
+    background: #fff;
+    margin-top: 10px;
+}
+
+.katalog{
+    display: flex;
+    float: right;
+    width: 677px;
+}
+
+.name_category{
+    margin: 30px 11px 0 20px;
+    width: 200px;
+    height: 38px;
+    background: #ff7f56;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.name_category p{
+    margin: 0 25px;
+    padding: 9px;
+    font-size: 19px;
+    color: #fff;
+}
+.name_category_last{
+    margin: 30px 11px 0 20px;
+    width: 300px;
+    height: 38px;
+    background: #ff7f56;
+    border-radius: 25px;
+    text-align: center;
+}
+.name_category_last p{
+    margin: 0 25px;
+    padding: 9px;
+    font-size: 19px;
+    color: #fff;
+}
+.lot{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000;
+    margin: 25px 25px 50px 50px;
+}
+
+.img__lot{
+    width: 200px;
+    height: 200px;
+}
+
+.lot p{
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.inf{
+    width: 200px;
+}
+
+.circle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #C4C4C4;
+    top: -48px;
+    left: 164px;
+}
+
+.cart{
+    height: 30px;
+    width: 30px;
+    margin: 5px 0 0 5px;
+}
+
+.katalog:last-child{
+    display: flex;
+    float: right;
+    width: 677px;
+    margin-bottom: 200px;
+}
