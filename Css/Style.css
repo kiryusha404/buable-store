@@ -1,19 +1,48 @@
-
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #8e918f;
 }
 
+.index{
+    width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    min-height: 100%;
+}
+
+.index2{
+    width: 1200px;
+
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    min-height: 100%;
+}
+.index3{
+    width: 1200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    min-height: 100%;
+}
 /*header*/
 
 header{
     background: #FF7F56;
-    width: 100%;
+    width: 1200px;
     height: 70px;
     margin-bottom: 70px;
-    display: inline-block;
+    display: flex;
     position: fixed;
     z-index: 3;
     top: 0;
@@ -33,6 +62,10 @@ header button{
     margin: 15px 150px 0 15px;
     width: 105px;
 }
+header button:hover{
+    background: #8e918f;
+    cursor: pointer;
+}
 .button_l{
     border-radius: 0 25px;
 }
@@ -46,11 +79,13 @@ header button{
 /*footer*/
 
 footer{
+    margin-top: auto;
     background: #FF7F56;
-    width: 100%;
     height: 170px;
     bottom:0;
     padding-top: 5px;
+    width: 100%;
+    position: absolute;
 }
 
 .footer__article1 h1{
@@ -132,7 +167,7 @@ border: 1px solid black;
 width: 150px;
 height: 40px;
 background-color: #FF7F56;
-margin-left: 200px;
+margin-left: 100px;
 border-radius: 30px;
 text-align: center;
 }
@@ -145,7 +180,7 @@ text-align: center;
 .stroka{
     width: 50%;
     display: flex;
-    margin-left: 15%;
+    margin-left: 100px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -173,7 +208,7 @@ text-align: center;
 /*aside*/
 
 .left_navigation{
-    height: 400px;
+    height: 500px;
     width: 200px;
     margin: 30px 70px 0 30px; 
     background-color: #ff7f56;
@@ -182,7 +217,10 @@ text-align: center;
     padding: 10px;
     float: left;
     position: absolute;
-    position: fixed;
+}
+.left_navigation button:hover{
+    background: #8e918f;
+    cursor: pointer;
 }
 
 /*section__katalog*/
@@ -193,7 +231,7 @@ text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 .name_p{
     width: 140px;
@@ -255,7 +293,7 @@ text-align: center;
     height: 200px;
     width: 200px;
     border: 1px solid #000;
-    margin: 25px 25px 50px 50px;
+    margin: 25px 70px 50px 20px;
 }
 
 .img__lot{
@@ -273,6 +311,7 @@ text-align: center;
 }
 
 .circle{
+    border: none;
     position: relative;
     width: 40px;
     height: 40px;
@@ -281,11 +320,14 @@ text-align: center;
     top: -48px;
     left: 164px;
 }
+    .circle:hover{
+        background: #e6a85c;
+        cursor: pointer;
+    }
 
 .cart{
     height: 30px;
     width: 30px;
-    margin: 5px 0 0 5px;
 }
 
 .katalog:last-child{
@@ -294,3 +336,123 @@ text-align: center;
     width: 677px;
     margin-bottom: 200px;
 }
+
+
+/*Korzina*/
+
+.korzina__zag{
+    height: 30px;
+    width: 170px;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 10px;
+    background: #FF7F56;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.itogo{
+    width: 1098px;
+    margin: 0 auto;
+    height: 72px;
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 20px; 
+    font-size: 20px;
+}
+    .i__l__p{
+        margin-left: 40px;
+        margin-top: 24px;
+    }
+    .i__c__p{
+        margin-left: 35%;
+        margin-top: 24px;
+        width: 150px;
+    }
+    .itogo button{
+        height: 35px;
+        width: 150px;
+        border: 0;
+        background: #FF7F56;
+        color: white;
+        border-radius: 30px;
+        margin-left: 25%;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+.products{
+    margin-left: 50px;
+}
+    .product{
+        width: 1098px;
+        height: 100px;
+        display: flex;
+        border: 1px solid black;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .product img{
+        height: 100px;
+        width: 100px;
+        border-right: 1px solid black;
+    }
+    .product p{
+        width: 200px;
+        padding: 0;
+        margin-left: 40px;
+        
+    }
+    .pname{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .pcost{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .right__block{
+        display: flex;
+        margin-top: 60px;
+        margin-left: 450px;
+    }
+        .yt{
+            width: 150px;
+            height: 30px;
+            border: 0;
+            border-radius: 30px;
+            background: #FF7F56;
+            color: white;
+        }
+        .yt:hover{
+            background: #eca790;
+            cursor: pointer;
+        }
+        .r__r__block{
+            display: flex;
+            background: #FF7F56;
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            align-items: center;
+            margin-left: 40px;
+        }
+            .r__r__block button{
+                border: 0;
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: white;
+                background: #FF7F56;
+            }
+            .r__r__block button:hover{
+                cursor: pointer;
+            }
+            .r__r__block p{
+                margin: 0;
+                padding: 0;
+                color: white;
+                
+            }

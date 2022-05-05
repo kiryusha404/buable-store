@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="ru">
-   <head>
-	   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-	   <title>Каталог</title>
-	   <link rel="stylesheet" href="Css/Style.css">
-      <link rel = "shortcut icon" href = "Img/icon.png" type = "image/png">
-	   <script src="JS/script.js"></script>
-   </head>
+	<head>
+		<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+		<title>Каталог товаров</title>
+		<link rel="stylesheet" href="Css/Style.css">
+		<script src="JS/script.js"></script>
+		
+	</head>
 <body>
+<div class="index2">
 <header>
-   <img src="Img/logo.png" alt="картинка" onclick="window.location.href = 'index.html';" class="logo">
-   <button class="button_l" onclick="window.location.href = 'index.html';">Главная</button>
-   <button class="button_c" onclick="window.location.href = 'katalog.html';">Каталог</button>
-   <button class="button_r" onclick="window.location.href = 'korzina.html';">Корзина</button>
+	<img src="Img/logo.png" alt="картинка" onclick="window.location.href = 'index.html';" class="logo">
+	<button class="button_l" onclick="window.location.href = 'index.html';">Главная</button>
+	<button class="button_c" onclick="window.location.href = 'katalog.html';">Каталог</button>
+	<button class="button_r" onclick="window.location.href = 'korzina.html';">Корзина</button>
 </header>
 
 	<aside class="left_navigation">
@@ -28,33 +29,36 @@
 	<article class="name_category"><p>Конструкторы</p></article>
 	<div class="katalog">
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k1.jpg">
+			<img id="LCI0" class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k1.jpg">
 			<div class="inf">
-				<p>Lego City</p>
+				<p id="LCN0">Lego City</p>
 				<p>Цена: 1000руб</p>
-				<div class="circle">
+				<p id="LCC0" style="display: none;">1000</p>
+				<button class="circle" onclick="ArrAdd(0); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k2.jpg">
+			<img id="LCI1" class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k2.jpg">
 			<div class="inf">
-				<p>Lego Chima</p>
+				<p id="LCN1">Lego Chima</p>
 				<p>Цена: 1500руб</p>
-				<div class="circle">
+				<p id="LCC1" style="display: none;">1500</p>
+				<button class="circle" onclick="ArrAdd(1); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k3.jpg">
+			<img id="LCI2" class="img__lot" alt="картинка" src="Img/Kategorii/Konstructor/k3.jpg">
 			<div class="inf">
-				<p>Lego DC</p>
+				<p id="LCN2">Lego DC</p>
 				<p>Цена: 2000руб</p>
-				<div class="circle">
+				<p id="LCC2" style="display: none;">2000</p>
+				<button class="circle" onclick="ArrAdd(2); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -62,33 +66,36 @@
 	<article class="name_category_last"><p>Игрушечные оружия</p></article>
 	<div class="katalog">
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io1.jpg">
+			<img id="LCI3" class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io1.jpg">
 			<div class="inf">
-				<p>Водный пистолет</p>
+				<p id="LCN3">Водный пистолет</p>
 				<p>Цена: 500руб</p>
-				<div class="circle">
+				<p id="LCC3" style="display: none;">500</p>
+				<button class="circle" onclick="ArrAdd(3); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io2.jpg">
+			<img id="LCI4" class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io2.jpg">
 			<div class="inf">
-				<p>Пистолет на пульках</p>
+				<p id="LCN4">Пистолет на пульках</p>
 				<p>Цена: 700руб</p>
-				<div class="circle">
+				<p id="LCC4" style="display: none;">700</p>
+				<button class="circle" onclick="ArrAdd(4); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io3.jpg">
+			<img id="LCI5" class="img__lot" alt="картинка" src="Img/Kategorii/Igr oryzh/io3.jpg">
 			<div class="inf">
-				<p>Пистолет NERF</p>
+				<p id="LCN5">Пистолет NERF</p>
 				<p>Цена: 2500руб</p>
-				<div class="circle">
+				<p id="LCC5" style="display: none;">2500</p>
+				<button class="circle" onclick="ArrAdd(5); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -96,33 +103,36 @@
 	<article class="name_category"><p>Куклы</p></article>
 	<div class="katalog">
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl1.jpeg">
+			<img id="LCI6" class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl1.jpeg">
 			<div class="inf">
-				<p>Barby</p>
-				<p>Цена: 1300руб</p>
-				<div class="circle">
+				<p id="LCN6">Barby1</p>
+			 	<p>Цена: 1300руб</p>
+				<p id="LCC6" style="display: none;">1300</p>
+				<button class="circle" onclick="ArrAdd(6); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl2.jpeg">
+			<img id="LCI7" class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl2.jpeg">
 			<div class="inf">
-				<p>Barby</p>
+				<p id="LCN7">Barby2</p>
 				<p>Цена: 1500руб</p>
-				<div class="circle">
+				<p id="LCC7" style="display: none;">1500</p>
+				<button class="circle" onclick="ArrAdd(7); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl3.jpeg">
+			<img id="LCI8" class="img__lot" alt="картинка" src="Img/Kategorii/Kykls/kl3.jpeg">
 			<div class="inf">
-				<p>Barby</p>
+				<p id="LCN8">Barby3</p>
 				<p>Цена: 2000руб</p>
-				<div class="circle">
+				<p id="LCC8" style="display: none;">2000</p>
+				<button class="circle" onclick="ArrAdd(8); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -130,33 +140,36 @@
 	<article class="name_category_last"><p>Мягкие игрушки</p></article>
 	<div class="katalog">
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi1.jpg">
+			<img id="LCI9" class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi1.jpg">
 			<div class="inf">
-				<p>Акула</p>
+				<p id="LCN9">Акула</p>
 				<p>Цена: 1000руб</p>
-				<div class="circle">
+				<p id="LCC9" style="display: none;">1000</p>
+				<button class="circle" onclick="ArrAdd(9); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi2.jpg">
+			<img id="LCI10" class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi2.jpg">
 			<div class="inf">
-				<p>Свинка</p>
+				<p id="LCN10">Свинка</p>
 				<p>Цена: 750руб</p>
-				<div class="circle">
+				<p id="LCC10" style="display: none;">750</p>
+				<button class="circle" onclick="ArrAdd(10); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 		<div class="lot">
-			<img class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi3.jpg">
+			<img id="LCI11" class="img__lot" alt="картинка" src="Img/Kategorii/M Igr/mi3.jpg">
 			<div class="inf">
-				<p>Кот</p>
+				<p id="LCN11">Кот</p>
 				<p>Цена: 1200руб</p>
-				<div class="circle">
+				<p id="LCC11" style="display: none;">1200</p>
+				<button class="circle" onclick="ArrAdd(11); alert('Товар добавлен в корзину');">
 					<img class="cart" alt="картинка" src="Img/cart.png">
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -180,5 +193,6 @@
 	   <p>baublestore@mail.ru</p>
 	</article>
 </footer>
+</div>
 </body>
 </html>

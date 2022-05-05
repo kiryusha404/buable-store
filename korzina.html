@@ -7,33 +7,49 @@
 		<link rel = "shortcut icon" href = "Img/icon.png" type = "image/png">
 		<script src="JS/script.js"></script>
 	</head>
+
 <body>
-<header>
-	<img src="Img/logo.png" alt="картинка" onclick="window.location.href = 'index.html';" class="logo">
-	<button class="button_l" onclick="window.location.href = 'index.html';">Главная</button>
-	<button class="button_c" onclick="window.location.href = 'katalog.html';">Каталог</button>
-	<button class="button_r" onclick="window.location.href = 'korzina.html';">Корзина</button>
-</header>
+	<div class="index3">
+		<header>
+			<img src="Img/logo.png" alt="картинка" onclick="window.location.href = 'index.html';" class="logo">
+			<button class="button_l" onclick="window.location.href = 'index.html';">Главная</button>
+			<button class="button_c" onclick="window.location.href = 'katalog.html';">Каталог</button>
+			<button class="button_r" onclick="window.location.href = 'korzina.html';">Корзина</button>
+		 </header>
 
-<section class="section__korzina">
+		 <main>
+			<p class="korzina__zag">Корзина</p>
 
-</section>
+			<div class="itogo">
+				<p class="i__l__p">Итого:</p>
+				<p class="i__c__p"><script>document.write(SumPrice() + " руб.");</script></p>
+				<button onclick="alert('Извините, данная функция еще не доступна.');">Оформить заказ</button>
+			</div>
+			
+			<div class="products">
+				<button onclick="localStorage.clear(); window.location.href = 'korzina.html';">
+					Очистить корзину
+				</button>
+				<script src="Js/korzina_products.js"></script>
+			</div>
+		 </main>
 
-<footer>
-	<article class="footer__article1">
-	   <h1>О нас</h1>
-	   <p>Bauble store продаёт самые лучшие игрушки в городе. Bauble store специально заказываем из-за рубежа самые сочные новинки.</p>
-	</article>
-
-	<article class="footer__article2">
-	   <h2>Контакты</h2>
-	   <img src="Img/geo.png" alt="">
-	   <p>г.Ижевск ул.студенческая 7</p>
-	   <img src="Img/tel.png" alt="">
-	   <p>8(3412)346276</p>
-	   <img src="Img/conv.png" alt="">
-	   <p>baublestore@mail.ru</p>
-	</article>
-</footer>
+		 <footer>
+			<article class="footer__article1">
+			   <h1>О нас</h1>
+			   <p>Bauble store продаёт самые лучшие игрушки в городе. Bauble store специально заказываем из-за рубежа самые сочные новинки.</p>
+			</article>
+	  
+			<article class="footer__article2">
+			   <h2>Контакты</h2>
+			   <img src="Img/geo.png" alt="">
+			   <p>г.Ижевск ул.студенческая 7</p>
+			   <img src="Img/tel.png" alt="">
+			   <p>8(3412)346276</p>
+			   <img src="Img/conv.png" alt="">
+			   <p>baublestore@mail.ru</p>
+			</article>
+	  </footer>
+</div>
 </body>
 </html>
