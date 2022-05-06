@@ -21,11 +21,11 @@ body,html{
 
 .index2{
     width: 1200px;
-
     margin: 0 auto;
     background-color: white;
     position: relative;
     min-height: 100%;
+    margin-top: 70px;
 }
 .index3{
     width: 1200px;
@@ -44,7 +44,6 @@ header{
     margin-bottom: 70px;
     display: flex;
     position: fixed;
-    z-index: 3;
     top: 0;
     text-align: center;
     
@@ -208,15 +207,16 @@ text-align: center;
 /*aside*/
 
 .left_navigation{
-    height: 500px;
+    height: 300px;
     width: 200px;
-    margin: 30px 70px 0 30px; 
+    margin: 50px 70px 0 30px; 
     background-color: #ff7f56;
     border-radius: 50px; 
     text-align: center;
     padding: 10px;
     float: left;
-    position: absolute;
+    position: fixed;
+    z-index: 3;
 }
 .left_navigation button:hover{
     background: #8e918f;
@@ -261,7 +261,7 @@ text-align: center;
 }
 
 .name_category{
-    margin: 30px 11px 0 20px;
+    margin: 50px 11px 0 20px;
     width: 200px;
     height: 38px;
     background: #ff7f56;
@@ -308,17 +308,17 @@ text-align: center;
 
 .inf{
     width: 200px;
+    display: flex;
 }
-
 .circle{
     border: none;
-    position: relative;
+    float: right;
     width: 40px;
     height: 40px;
     border-radius: 30px;
     background-color: #C4C4C4;
-    top: -48px;
-    left: 164px;
+    margin-top: 10px;
+    margin-left: 40px;
 }
     .circle:hover{
         background: #e6a85c;
