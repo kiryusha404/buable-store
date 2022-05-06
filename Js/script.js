@@ -7,6 +7,7 @@ function A() {
 	document.getElementById('radio3').style.background = "white";
 	document.getElementById('radio4').style.background = "white";
 	slider.src = images[0];//меняем ссылку на картинку, с помощью индекса
+	setTimeout(B, 4000);
  }
 function B() {
 	let slider = document.getElementById("slider");//забираем информацию о слайдере
@@ -15,6 +16,7 @@ function B() {
 	document.getElementById('radio3').style.background = "white";
 	document.getElementById('radio4').style.background = "white";
 	slider.src = images[1];//меняем ссылку на картинку, с помощью индекса
+	setTimeout(C, 4000);
 }
 function C() {
 	let slider = document.getElementById("slider");//забираем информацию о слайдере
@@ -23,6 +25,7 @@ function C() {
 	document.getElementById('radio3').style.background = "#274D7E";
 	document.getElementById('radio4').style.background = "white";
 	slider.src = images[2];//меняем ссылку на картинку, с помощью индекса
+	setTimeout(D, 4000);
 }
 function D() {
 	let slider = document.getElementById("slider");//забираем информацию о слайдере
@@ -31,6 +34,7 @@ function D() {
 	document.getElementById('radio3').style.background = "white";
 	document.getElementById('radio4').style.background = "#274D7E";
 	slider.src = images[3];//меняем ссылку на картинку, с помощью индекса
+	setTimeout(A, 4000);
 }
 
 /*Создание json массива и добавление в него данных о добавленных в корзину товарах*/
