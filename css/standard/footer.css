@@ -1,0 +1,28 @@
+footer{
+    margin-top: auto;
+    background-color: rgb(255, 255, 255);
+    border-top:2px solid #000 ;
+}
+.footer{
+    max-width: 1080px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+footer p{
+    float: left;
+    color: #000;
+    font-size: 23px;
+}
+.footer_img{
+    height: 23px;
+    float: left;
+}
+.info{
+    display: block;
+    float: left;
+    margin: 1px;
+}
