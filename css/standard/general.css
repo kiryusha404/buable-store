@@ -1,9 +1,0 @@
-body{
-    width: 100%;
-    background-color: hwb(0 96% 4%);
-}
-.general{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
